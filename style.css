@@ -1,0 +1,362 @@
+header {
+    text-align: left;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+header ul li {
+    display: inline;
+    position: relative;
+}
+
+header ul li:not(:last-child):after {
+    content: "|";
+    margin-left: 15px; 
+    margin-right: 15px;
+    color: #ffffff; 
+}
+
+header ul li:last-child {
+    margin-right: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto; 
+    margin-left: 35px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header ul li a:hover {
+    color: #d1f577;  
+}
+header ul li a.active {
+    color: #d1f577;
+}
+
+body {
+    background-color: #4a52eb;
+    color: #ffffff;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    padding: 20px;
+    left: 20px;
+    top: 80px;
+    text-align: left;
+}
+
+.home h1 {
+    font-size: 36px;
+    text-align: left;
+    margin: 20px 0 10px 20px; 
+    animation: slide 1s ease-in-out;
+}
+
+.highlight-text {
+    color: #d1f577;
+}
+
+.content {
+    display: flex;
+    align-items: center; 
+}
+
+.home p {
+    flex: 1;
+    margin: -60px 20px 0 20px;
+    max-width: 50%;
+    animation: slide-in 1s ease-in-out;
+    position: relative;
+    top: -20px; 
+}
+
+.btn {
+    margin-top: -40px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 2px solid #d1f577;
+    border-radius: 4rem;
+    padding: 15px 30px;
+    animation: slide-in 1s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    top: -20px; 
+}
+
+.home img {
+    max-width: 100%; 
+    max-height: 450px;
+    margin: -150px auto 0 auto;
+    animation: slide 1s ease-in-out; 
+}
+
+.btn a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d1f577;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.about {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -75px;
+}
+
+.about h1 {
+    font-size: 36px;
+    text-align: left;
+    margin: 20px 20px 10px 0px; 
+    animation: slide 1s ease-in-out;
+}
+
+.left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 1;
+
+}
+
+.about img {
+    width: 100%; 
+    height: auto;
+    animation: slide-in 1s ease-in-out;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: justify;
+    margin-right: 50px;
+    animation: slide 1s ease-in-out;
+}
+
+.contact{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    text-align: left;
+}
+
+.contact h2{
+    color: #d1f577;
+}
+
+.contact h1,h2{
+    margin-left: 20px;
+    animation: slide 1s ease-in-out;
+}
+
+.contact p {
+    margin-left: 20px;
+    max-width: 50%;
+    animation: slide-in 1s ease-in-out;
+}
+
+.contact table {
+    width: 50%;
+    border-collapse:collapse;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    background-color: #4a52eb;
+    border: 1px solid #ffffff; 
+    border-radius: 10px;   
+    animation: slide-in 1s ease-in-out;
+}
+
+.contact th {
+    border-bottom: 1px solid #fff;
+}
+.contact th, .contact td {
+    padding: 12px;
+    text-align: left;
+}
+
+.contact a {
+        color: white;
+        text-decoration: none; 
+    }
+
+.project-section {
+        margin-bottom: 40px;
+    }
+    
+.skill-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+.ps {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.ps h1{
+    margin-left: 40px;
+    text-align: left;
+    animation: slide 1s ease-in-out;
+}
+
+.card-container {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 30px;
+    animation: slide-in 1s ease-in-out;
+}
+
+.card {
+    width: 400px;
+    height: 350px;
+    margin-right: 30px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #d1f577;
+    color: #d1f577;
+}
+
+.card img {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 80px;
+}
+
+.card-content {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; 
+    border-top: 3px solid #ffffff;
+    margin-top: 10px; 
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.skill-container {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.skill-card {
+    width: 300px;
+    height: 450px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+    animation: slide-in 1s ease-in-out;
+}
+
+.skill-card img {
+    width: 100%;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #d1f577;
+    color: #d1f577;
+}
+
+
+.skill-card p {
+    padding: 20px;
+    text-align: justify;
+    border-top: 3px solid #ffffff;
+    margin-top: 10px; 
+}
+
+footer {
+    color: white;
+    padding: 10px 0;
+    position:absolute;
+    bottom: 0px;
+}
+    
+.footer-content p {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin:0 0 0 500px;
+}
+    
+.footer-content p:hover {
+    color: #d1f577;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+@keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
